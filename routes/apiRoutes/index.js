@@ -1,8 +1,8 @@
 //to declare routes in any file
 const router = require('express').Router();
 //to require note-data JSON format
-const {notes} = require('../../Develop/db/db.json');
-const {createNewNote} = require('../../lib/notes');
+const {notes} = require('../../db/db.json');
+const createNewNote = require('../../lib/notes');
 
 
 //to request data from db.json and return saved notes
