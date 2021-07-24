@@ -45,6 +45,11 @@ app.post('/api/notes', (req,res) => {
     res.json(note);
 });
 
+//route to get index.html to be served from Express.js server ('/' is the route used to create a homepage for a server)
+app.get('/', (req, res) => {
+    //to tell where to find the file we want to send back to client
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+});
 //to make our server to listen 
 //TODO: CHANGE PORT 3001 TO PORT ONCE DEPLOYED TO HEROKU
 app.listen(PORT,() => { 
