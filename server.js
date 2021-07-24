@@ -27,13 +27,13 @@ function createNewNote (body, notesArray) {
     //return finish code to post route for response
     return note;
 }
-//to request data from db.json 
+//to request data from db.json and return saved notes
 app.get('/api/notes', (req,res) => {
     let results = notes;
     res.json(results);
 });
 
-//for client to add notes
+//for client to add notes 
 app.post('/api/notes', (req,res) => {
     //set id based on what the next index of the array will be
     req.body.id = notes.length.toString();
