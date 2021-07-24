@@ -2,7 +2,7 @@
 const router = require('express').Router();
 //to require note-data JSON format
 const {notes} = require('../../db/db.json');
-const createNewNote = require('../../lib/notes');
+const {createNewNote,removeNote} = require('../../lib/notes');
 //npm package (shortid) to generate ids
 const shortid = require('shortid');
 
@@ -23,6 +23,14 @@ router.post('/notes', (req,res) => {
     //req.body is where our incoming content will be
     console.log(req.body);
     res.json(note);
+});
+
+//to delete
+router.delete('/notes/:id', (req,res) => {
+    const id = req.params.id;
+    const deleteNote = removeNote(id,notes);
+    //console.log (deleteNote);
+    res.json(deleteNote);
 });
 
 module.exports = router;
