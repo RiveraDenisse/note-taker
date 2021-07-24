@@ -21,7 +21,6 @@ router.post('/notes', (req,res) => {
     //add note to json file and note array in this function
     const note = createNewNote(req.body,notes);
     //req.body is where our incoming content will be
-    console.log(req.body);
     res.json(note);
 });
 
@@ -29,7 +28,6 @@ router.post('/notes', (req,res) => {
 router.delete('/notes/:id', (req,res) => {
     const id = req.params.id;
     const deleteNote = removeNote(id,notes);
-    //console.log (deleteNote);
     res.json(deleteNote);
 });
 
