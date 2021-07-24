@@ -12,7 +12,7 @@ Note Taker can be used to write, save and delete notes. The application stores d
 - [Deployment](#deployment)
 - [License](#license)
 - [Photos](#photos)
-- [Walkthrough](#Walkthrough)
+- [Video](#video)
 - [Questions](#questions)
 
 ## Usage
@@ -24,7 +24,7 @@ Note Taker can be used to write, save and delete notes. The application stores d
 * Click on "Note Title" to write the title's note followed by the note text.
 * Once the information is filled a "disk" icon will be displayed on the top right hand-side corner as well as a "+" icon.
 * By clicking the "disk" icon, the task will be saved and will appear on your left side column.
-* If the "+" icon is pressed this will clear the text just input.
+* If the " :heavy_plus_sign: " icon is pressed this will clear the text just input.
 * To remove a note, go to the saved notes (right column) and press the trash icon.
 
 ## Deployment
@@ -37,15 +37,23 @@ This application is covered by MIT License. For more information about the licen
 
 ## Photos
 
-![screenshot]()
+main page
+![screenshot](/Assets/main-page.png)
+notes
+![screenshot](/Assets/notes.png)
+
+notes will displayed as JSON api/notes
+![screenshot](/Assets/json.png)
 
 ## Video
 
-![demo video]()
+![demo video](/Assets/Note-Takergif.gif)
+
+Or you can go [here](https://drive.google.com/file/d/1Tq6ZmYEub9v_YTuBfcQNp2PCNrv_FXum/view)
 
 ## Questions
 
 For any questions, please contact me using the information below:
 
 - Github Profile: [RiveraDenisse](https://github.com/RiveraDenisse)
-- Email me at :e-mail: : denisse_alejandrar@hotmail.com
+- :e-mail: : denisse_alejandrar@hotmail.com
